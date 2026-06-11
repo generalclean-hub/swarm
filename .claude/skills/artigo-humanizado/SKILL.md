@@ -40,6 +40,17 @@ O padrão de referência é o artigo da RDC 216. As marcas dessa voz:
 7. **Fechamento** — síntese do valor + CTA suave para a empresa (consultoria, produtos, materiais gratuitos).
 8. **Referências** — fontes oficiais e técnicas reais, com links.
 
+## Comprimento padrão por tipo de artigo
+
+Se o usuário não especificar o tamanho, use estes padrões:
+
+| Tipo de artigo | Tamanho aproximado | Exemplo |
+|---|---|---|
+| Guia comercial local (SEO local) | ~1.200 palavras | "Produtos de limpeza em Jundiaí" |
+| Artigo normativo (ANVISA, RDC, ISO, IN) | ~2.000 palavras | "RDC 216: o que sua cozinha precisa cumprir" |
+| Conteúdo institucional/formativo (Instituto da Limpeza) | ~1.500 palavras | "O que é limpeza profissional" |
+| Artigo de produto/categoria | ~1.000 palavras | "Como escolher um desengordurante industrial" |
+
 ## SEO (estruturar para ranquear)
 
 - Palavra-chave principal no título (H1), no primeiro parágrafo e em ao menos um subtítulo.
@@ -47,6 +58,42 @@ O padrão de referência é o artigo da RDC 216. As marcas dessa voz:
 - FAQ em formato pergunta-resposta para capturar featured snippets.
 - Frases objetivas; parágrafos curtos. Densidade de palavra-chave natural, nunca forçada.
 - Sugira meta-description de até 155 caracteres ao final.
+
+### SEO local (artigos geolocalizados)
+
+Quando o objetivo for tráfego local ("produto/serviço + cidade"):
+
+- Palavra-chave no formato **"produto + cidade"** no H1, no primeiro parágrafo e na sugestão de URL/slug (ex.: `/produtos-de-limpeza-jundiai`).
+- Cite **bairros, distritos industriais, rodovias e polos econômicos reais** da cidade para reforçar relevância local (ex.: em Jundiaí: Distrito Industrial, Rodovia Anhanguera). Nunca invente nomes de bairros — se não souber, pesquise ou pergunte.
+- Inclua no FAQ ao menos uma pergunta no formato **"Onde comprar [produto] em [cidade]?"** e uma sobre **entrega/atendimento na região**.
+- Conecte o conteúdo ao perfil econômico da cidade: que tipos de empresa predominam ali (indústria, logística, saúde, alimentação) e como o produto atende cada um.
+- Para replicar o artigo em **cidades vizinhas**, não basta trocar o nome da cidade: mude também os bairros/polos citados, o exemplo de segmento predominante e ao menos a abertura e o fechamento — senão o Google trata como conteúdo duplicado.
+- Recomende ao usuário manter o **Google Perfil da Empresa** atualizado e vinculado ao artigo, quando fizer sentido.
+
+### Dados estruturados (FAQPage)
+
+Sempre que o artigo tiver FAQ, entregue ao final um bloco **JSON-LD do tipo FAQPage** pronto para colar no WordPress, com todas as perguntas e respostas do FAQ. Modelo:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pergunta exatamente como aparece no artigo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Resposta resumida, em texto puro, sem markdown."
+      }
+    }
+  ]
+}
+</script>
+```
+
+As respostas no JSON-LD devem ser versões resumidas (1–3 frases) das respostas do artigo, em texto puro.
 
 ## Evitar (cara de IA)
 
@@ -67,3 +114,22 @@ Entregue o artigo em Markdown, pronto para publicação no WordPress, com:
 - FAQ
 - Bloco de referências com links
 - Meta-description sugerida ao final
+- Bloco JSON-LD FAQPage (quando houver FAQ)
+- Sugestão de slug/URL (especialmente em artigos de SEO local)
+
+## Checklist de revisão final (antes de entregar)
+
+Revise o artigo pronto contra esta lista. Só entregue depois de passar em todos os itens:
+
+- [ ] Palavra-chave principal no H1, no primeiro parágrafo e em ao menos um subtítulo
+- [ ] Hierarquia de títulos correta (H1 único; H2 > H3 > H4 sem pular níveis)
+- [ ] Meta-description com até 155 caracteres e contendo a palavra-chave
+- [ ] Nenhuma abertura genérica ("No mundo de hoje…", "Em um cenário cada vez mais…")
+- [ ] Nenhum padrão repetido de "não é X — é Y" nem excesso de travessões
+- [ ] Adjetivos sustentados por fato ou fonte (sem "essencial/fundamental" soltos)
+- [ ] Termos técnicos contextualizados na primeira menção
+- [ ] CTA com link/contato real — se não houver o dado, marcar `[confirmar]` explicitamente
+- [ ] Referências apontam para fontes oficiais reais (nunca inventar norma, número de RDC ou link)
+- [ ] FAQ com 5–10 perguntas e JSON-LD FAQPage correspondente
+- [ ] Em artigos locais: cidade na palavra-chave, bairros/polos reais citados, pergunta "onde comprar em [cidade]" no FAQ
+- [ ] Comprimento dentro do padrão do tipo de artigo (ou do pedido do usuário)
