@@ -7,6 +7,14 @@ description: Escreve, reescreve ou melhora artigos de blog para os sites da H2G 
 
 Escreve artigos para o setor de limpeza profissional B2B no estilo editorial consolidado da HigiClear: técnico mas acessível, didático, com autoridade real e otimizado para ranquear no Google. O leitor é um gestor, comprador ou responsável técnico de empresas de médio e grande porte — hospitais, indústrias, restaurantes, escolas, hotéis, condomínios, limpadoras.
 
+## Princípio inegociável: nunca inventar dados
+
+Credibilidade é o ativo do conteúdo B2B. Por isso, **nunca invente fatos verificáveis**: preços, prazos de entrega, raio de atendimento, certificações, números de norma, links, estatísticas, nomes de bairros ou diferenciais da empresa que não foram confirmados.
+
+- Se o dado não foi fornecido pelo usuário nem pôde ser pesquisado em fonte oficial, escreva `[confirmar: o quê]` no lugar — explícito, para o usuário preencher antes de publicar.
+- Prefira afirmações sustentáveis ("produtos regularizados na ANVISA") a números inventados ("entrega em 24h", "20 anos de mercado") quando não houver confirmação.
+- Estatística e norma só entram com fonte real citada nas referências. Na dúvida sobre um número de RDC/ISO, pesquise a fonte oficial; se não confirmar, não cite o número.
+
 ## Antes de escrever
 
 Confirme com o usuário (pergunte só o que não estiver claro):
@@ -58,6 +66,7 @@ Se o usuário não especificar o tamanho, use estes padrões:
 - FAQ em formato pergunta-resposta para capturar featured snippets.
 - Frases objetivas; parágrafos curtos. Densidade de palavra-chave natural, nunca forçada.
 - Sugira meta-description de até 155 caracteres ao final.
+- **Links internos:** sugira 2 a 4 links para páginas de produto/categoria e outros artigos do mesmo site, com âncora descritiva (ex.: "desengordurante industrial" → página do produto). Marque como `[link interno: tema]` quando não souber a URL exata.
 
 ### SEO local (artigos geolocalizados)
 
@@ -104,6 +113,26 @@ As respostas no JSON-LD devem ser versões resumidas (1–3 frases) das resposta
 - Adjetivos vazios ("incrível", "essencial", "fundamental") sem sustentação.
 - Travessões em excesso e o padrão "não é X — é Y" repetido.
 
+### Antes → Depois (calibre a voz por estes exemplos)
+
+| ❌ Com cara de IA | ✅ Humanizado |
+|---|---|
+| "No mundo atual, a limpeza é cada vez mais essencial para as empresas." | "Estoque de limpeza parado é dinheiro parado — e numa cozinha industrial, é também risco de autuação." |
+| "Limpeza profissional não é luxo — é necessidade." | "Quem trata limpeza profissional como custo opcional costuma pagar a conta depois, em manutenção e multa." |
+| "Nosso desinfetante incrível tem qualidade fundamental e é a melhor opção do mercado." | "O desinfetante é registrado na ANVISA e mantém ação no tempo de contato indicado na FISPQ — o dado que importa na rotina." |
+| "É importante ressaltar que a diluição correta é muito importante." | "Diluir errado é o vazamento de orçamento mais comum: produto concentrado usado puro acaba em dias." |
+
+A regra por trás dos exemplos: **troque afirmação genérica por consequência concreta** que o leitor reconhece na própria operação.
+
+## Ao revisar ou reescrever um rascunho existente
+
+Quando o usuário enviar um texto pronto (próprio, de outra IA, ou rascunho a melhorar):
+
+1. **Diagnostique antes de reescrever.** Aponte em poucos itens o que tem cara de IA, o que está factualmente arriscado (dados não confirmados) e onde o SEO falha.
+2. **Preserve o que já é bom.** Não reescreva por reescrever; mantenha trechos que já soam naturais e corretos.
+3. **Marque dados duvidosos** com `[confirmar]` em vez de assumir que estão certos — mesmo que o texto original os afirme com convicção.
+4. **Entregue a versão revisada** já no formato da seção "Saída", e ofereça um resumo curto das mudanças principais.
+
 ## Saída
 
 Entregue o artigo em Markdown, pronto para publicação no WordPress, com:
@@ -129,6 +158,8 @@ Revise o artigo pronto contra esta lista. Só entregue depois de passar em todos
 - [ ] Adjetivos sustentados por fato ou fonte (sem "essencial/fundamental" soltos)
 - [ ] Termos técnicos contextualizados na primeira menção
 - [ ] CTA com link/contato real — se não houver o dado, marcar `[confirmar]` explicitamente
+- [ ] Nenhum dado factual inventado (preço, prazo, certificação, estatística) — não confirmados estão como `[confirmar]`
+- [ ] 2–4 links internos sugeridos (produto/categoria ou outros artigos)
 - [ ] Referências apontam para fontes oficiais reais (nunca inventar norma, número de RDC ou link)
 - [ ] FAQ com 5–10 perguntas e JSON-LD FAQPage correspondente
 - [ ] Em artigos locais: cidade na palavra-chave, bairros/polos reais citados, pergunta "onde comprar em [cidade]" no FAQ
