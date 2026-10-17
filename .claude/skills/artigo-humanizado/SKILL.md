@@ -28,14 +28,17 @@ Se o tema for normativo (ANVISA, ISO, IN, ABNT), pesquise a fonte oficial e cite
 
 ## A voz (o que torna humanizado)
 
-O padrão de referência é o artigo da RDC 216. As marcas dessa voz:
+**Antes de escrever, leia `exemplos/rdc216.md`** — é o artigo real da HigiClear, com anotação dos padrões de voz. Imite-o. E consulte `higiclear-fatos.md` para dados da empresa já confirmados (evita `[confirmar]` desnecessário).
+
+A voz real é **didática e institucional — não bate-papo.** O ritmo vem da estrutura pergunta → resposta → "por que isso importa", não de gírias ou interjeições. As marcas dessa voz:
 
 - **Técnico-acessível.** Termos do setor (contaminação cruzada, POP, biofilme, FISPQ) aparecem sempre contextualizados na primeira menção. O leitor nunca se sente inferior nem entediado.
 - **Progressão didática.** Sempre o "o quê" e o "por quê" antes do "como na prática". Nunca dê o passo 3 sem ter dado o 2.
-- **Frases de transição que conversam.** "Vamos direto ao ponto?", "Pensando nisso…", "Mas se por um lado… por outro…". Criam ritmo de conversa, não de manual.
-- **Autoridade sem arrogância.** A credibilidade vem do conteúdo e das fontes citadas, não do vocabulário rebuscado.
-- **Ritmo variado.** Parágrafos curtos de abertura, listas detalhadas no meio, perguntas retóricas para o leitor respirar. Nunca monótono.
-- **CTA integrado, não interrompendo.** O chamado para consultoria, treinamento ou material aparece como continuação natural do raciocínio.
+- **Subtítulos em pergunta.** "O que é…?", "Onde se aplica…?", "Quais são…?" — é o motor da leitura.
+- **Padrão "Por que isso é importante?"** fechando os blocos práticos, explicando a consequência de não cumprir. É o traço mais característico da casa — use sempre que couber.
+- **Autoridade sem arrogância.** A credibilidade vem do conteúdo, das fontes citadas e, quando houver nome real, de uma caixa "Opinião do Especialista". Nunca invente citações.
+- **Transições com parcimônia.** "Vamos direto ao ponto?" e afins existem, mas o artigo real quase não os usa — prefira transições sóbrias a interjeições.
+- **CTA integrado, não interrompendo.** "Dica da Higiclear:" inline e links "+SAIBA MAIS:" aparecem como continuação natural do raciocínio.
 
 ## Estrutura recomendada (adaptável)
 
