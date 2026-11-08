@@ -32,7 +32,14 @@ Taxa de lead por página de entrada (90 dias):
 - `/reducao-de-despesas-com-produtos-de-limpeza` — **8,1% (258 leads)**, a que mais converte no site; tráfego vem de fora do Google (RD Station/direto). A promessa "reduza suas despesas" é a que faz o comprador agir.
 - `/comodato/` 8,5% · `/segmentos/cozinha-industrial` 10,5% · `/segmentos/distribuidora` 16,7% · Rio Preto 10,5% · São Carlos 6,2% · hospitalar 5,9%
 - Artigos gigantes: RDC 216 2,2% · diluição 1,3% · DDS 0,6% · cloro 0,8%
-- Ribeirão Preto: 1 sessão em 90 dias.
+- Ribeirão Preto: 1 sessão em 90 dias. `/lista-de-produtos-de-limpeza/`: 2 sessões.
+- Cronograma de limpeza (material para baixar) converte 7,6% — melhor artigo; modelo para lead magnet.
+
+### Cuidados ao ler o Analytics (medição distorcida)
+
+- **Robôs em 18–31/out/2026:** ~15 mil usuários estrangeiros (EUA, Singapura, Hong Kong, Indonésia, Vietnã…), canal "Direto", sem retorno, caindo em `/carrinho` (0,3 s) e "(não definido)". Infla o canal Direto; o **Google orgânico é o canal real principal**. Analisar só Brasil ou excluir esse período.
+- **`generate_lead` está inflado:** 1.845 no trimestre, mas `form_submit` = 230 e "RD Popup e WhatsApp" = 37. Dispara várias vezes por visita e também para cliente logado (`/minha-conta`, `/central`, `/onboarding`). **Contatos reais: entre 37 e 230 por trimestre (provável ~100).** Usar a taxa só para comparar páginas, nunca como número de contatos.
+- Falta descobrir a **origem do tráfego de `/reducao-de-despesas`** (Aquisição de tráfego → Página de destino + Origem/mídia). Se for Google Ads, ampliar essa campanha.
 
 ## Prioridades decididas (ordem)
 
