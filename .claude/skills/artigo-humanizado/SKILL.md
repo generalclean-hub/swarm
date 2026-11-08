@@ -47,7 +47,9 @@ Todo artigo oferece **ao menos um material gratuito** de `higiclear-fatos.md` (C
 
 ## A voz (o que torna humanizado)
 
-**Antes de escrever, leia `exemplos/rdc216.md`** — é o artigo real da HigiClear, com anotação dos padrões de voz. Imite-o. E consulte `higiclear-fatos.md` para dados da empresa já confirmados (evita `[confirmar]` desnecessário).
+**Antes de escrever, leia `exemplos/rdc216.md`** — é o artigo real da HigiClear, com anotação dos padrões de voz. Imite-o. E consulte o arquivo de fatos do site de destino — `higiclear-fatos.md` ou `hygibras-fatos.md` — para dados da empresa já confirmados (endereços, telefones, linhas de produto, serviços). Evita `[confirmar]` desnecessário.
+
+**CTA de contato no corpo:** toda página comercial ou local leva um bloco de contato real no meio do texto (WhatsApp de contato, telefone, link de orçamento), não só no rodapé. Nunca use o link de *compartilhar* no WhatsApp como se fosse contato.
 
 A voz real é **didática e institucional — não bate-papo.** O ritmo vem da estrutura pergunta → resposta → "por que isso importa", não de gírias ou interjeições. As marcas dessa voz:
 
